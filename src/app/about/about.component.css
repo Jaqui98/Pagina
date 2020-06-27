@@ -1,0 +1,23 @@
+.jumbotron{
+  background-image: url('../../assets/img/universo1.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  color: white;
+}
+
+.row{
+  margin: 20px;
+}
+
+td, th{
+  vertical-align: center;
+  text-align: center;
+}
+
+th{
+  background: black;
+  color: white;
+}
+

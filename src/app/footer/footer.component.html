@@ -1,0 +1,136 @@
+
+<div class="footer">
+  <div class="row">
+    <div class="col-sm">
+      <mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+            <!-- Position Column -->
+            <ng-container matColumnDef="position">
+              <mat-header-cell *matHeaderCellDef> NOVEDADES </mat-header-cell>
+              <mat-cell style="width: 250px;height: 100px;" *matCellDef class="example-second-header-row">
+                <form class="example-form">
+                  <mat-form-field class="example-full-width">
+                    <mat-label style="font-size: 16px;">Email</mat-label>
+                    <input matInput [formControl]="emailFormControl" [errorStateMatcher]="matcher"
+                          placeholder="Ej. pat@example.com" style="font-size: 16px;">
+                    <mat-hint style="font-size: 16px;">Suscribete!</mat-hint>
+                    <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')" style="font-size: 15px;">
+                      Ingrese un email valido.
+                    </mat-error>
+                    <mat-error *ngIf="emailFormControl.hasError('required')" style="font-size: 16px;">
+                      Email es <strong style="font-size: 17px;">requerido</strong>
+                    </mat-error>
+                  </mat-form-field>
+                </form>
+              </mat-cell>
+            </ng-container>
+            <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+            <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+          </mat-table>
+      </div>
+
+      <div class="col-sm">
+        <mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+          <!-- Position Column -->
+          <ng-container matColumnDef="position">
+            <mat-header-cell *matHeaderCellDef> CONTACTANOS </mat-header-cell>
+            <mat-cell style="width: 500px;height: 100px;" *matCellDef class="example-second-header-row">
+              <p style="font-size: 15px;">Para cualquier duda o información puedes llamarnos al Tel. 6308 2340
+                ventasweb@gameskamel.com.mx</p>
+            </mat-cell>
+          </ng-container>
+          <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+          <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+          </mat-table>
+      </div>
+
+      <div class="col-sm">
+        <mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+          <!-- Position Column -->
+          <ng-container matColumnDef="position">
+            <mat-header-cell *matHeaderCellDef> SIGUENOS </mat-header-cell>
+            <mat-cell *matCellDef class="example-second-header-row">
+              <a href="#"><i class="fab fa-facebook fa-3x"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </mat-cell>
+          </ng-container>
+          <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+          <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+        </mat-table>
+    </div>
+  </div>
+
+</div>
+
+
+<!--
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <form class="example-form">
+        <mat-form-field class="example-full-width">
+          <mat-label>Email</mat-label>
+          <input matInput [formControl]="emailFormControl" [errorStateMatcher]="matcher"
+                placeholder="Ex. pat@example.com">
+          <mat-hint>Errors appear instantly!</mat-hint>
+          <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+            Please enter a valid email address
+          </mat-error>
+          <mat-error *ngIf="emailFormControl.hasError('required')">
+            Email is <strong>required</strong>
+          </mat-error>
+        </mat-form-field>
+      </form>
+    </div>
+    <div class="col-sm">
+      <p>
+        Para cualquier duda o información puedes llamarnos al Tel. 6308 2340
+        ventasweb@gameskamel.com.mx
+      </p>
+    </div>
+    <div class="col-sm">
+      <a href=""><i class="fab fa-facebook fa-3x"></i></a>
+      <a href=""><i class="fab fa-twitter-square fa-3x"></i></a>
+    </div>
+  </div>
+</div>
+
+<div id="contenedor">
+
+<div class="footer">
+  <section id="pie">
+       <div class="abajo">
+         <h1>Novedades</h1>
+        <form class="example-form">
+          <mat-form-field class="example-full-width">
+            <mat-label>Email</mat-label>
+            <input matInput [formControl]="emailFormControl" [errorStateMatcher]="matcher"
+                  placeholder="Ex. pat@example.com">
+            <mat-hint>Mantente al tanto!</mat-hint>
+            <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+              Ingrese un email valido
+            </mat-error>
+            <mat-error *ngIf="emailFormControl.hasError('required')">
+              El email es  <strong>Requerido</strong>
+            </mat-error>
+          </mat-form-field>
+        </form>
+       </div>
+       <div class="abajo">
+         <p>Para cualquier duda o información puedes llamarnos al Tel. 6308 2340
+          ventasweb@gameskamel.com.mx</p>
+          <a href=""><i class="fab fa-facebook fa-3x"></i></a>
+          <a href=""><i class="fab fa-twitter-square fa-3x"></i></a>
+       </div>
+       <div class="localizacion">
+           <h3>Localízanos</h3>
+           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1850.92064681624!2d-102.2609216!3d21.9021864!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8429ee2400122737%3A0xc74b3714c76a43fc!2sMacao%2C%20Z.%20M.%2C%20Aguascalientes%2C%20Ags.!5e0!3m2!1ses!2smx!4v1569815097791!5m2!1ses!2smx" width="350" height="100" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+           <p>Macao, Z. M., Aguascalientes, Ags.<br>Telf: 449 999 9899</p>
+       </div>
+   </section>
+   <p id="final">Copyright  2019 Rilakkuma Shop <br><span style="color: blueviolet">Diseño Páginas Web México</span> in Quorum</p>
+   <a href=""><i class="fas fa-angle-up" ></i></a>
+  </div>
+</div>
+-->

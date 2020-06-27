@@ -1,0 +1,34 @@
+.home{
+  background: #faf2f2;
+}
+
+.titulo{
+    text-align: center;
+    background-image: url(../../assets/img/02.jpeg);
+    color: whitesmoke;
+    opacity: 30%;
+}
+  .titulo:hover{
+    opacity: 80%;
+  }
+    .titulo:hover .animado{
+      color: white;
+      animation: heartBeat; /* referring directly to the animation's @keyframe declaration */
+      animation-duration: 2s; /* don't forget to set a duration! */
+    }
+
+.catalogo{
+  background-image: url(../../assets/img/difuminado1.jpg);
+  margin: 20px;
+  padding: 50px;
+  border-radius: 25px;
+  color: white;
+}
+  .imagen:hover{
+    animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+  }
+
+
+
+

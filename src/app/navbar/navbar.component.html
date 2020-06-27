@@ -1,0 +1,41 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <a class="navbar-brand" href="#">
+      <img src="../../assets/img/control11.png" alt="" width="50px" height="50px">
+    </a>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" [routerLink]="['/home']"><i class="fas fa-home"></i>Home</a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" [routerLink]="['/juegos']"><i class="fas fa-gamepad"></i>Juegos</a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" [routerLink]="['/about']"><i class="fas fa-user-astronaut"></i><i class="fas fa-user-secret"></i>About</a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" [routerLink]="['/contact']"><i class="fas fa-phone-alt"></i>Contactanos</a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" [routerLink]="['/question']"><i class="fas fa-comment"></i>Questions</a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" [routerLink]="['/login']"><i class="fas fa-user-alt"></i>
+            <!-- <i class="fas fa-poo"></i> -->
+            Login</a>
+        </li>
+      </ul>
+
+      <div class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Buscar Juego" #buscarTexto (keyup.enter)="buscarJuego(buscarTexto.value)">
+        <button (click)="buscarJuego(buscarTexto.value)" class="btn btn-outline-success my-2 my-sm-0" type="button">Buscar</button>
+      </div>
+
+    </div>
+  </nav>

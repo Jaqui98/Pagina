@@ -1,0 +1,10 @@
+<div class="row animated fadeIn fast" *ngIf="indice == -1">
+  <div class="col-md-12">
+    <div class="alert alert-info" role="alert">
+      No existen resultados con el juego: {{ nombrej }}
+    </div>
+  </div>
+
+</div>
+
+<app-juego *ngIf="indice != -1" [juego]="mijuego"></app-juego>

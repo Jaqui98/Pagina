@@ -1,0 +1,25 @@
+.footer{
+  width: 100%;
+  height: 200px;
+  background: #cceabb;
+}
+
+.row{
+  margin: 15px;
+  padding-top: 5px;
+}
+
+.letras{
+  font-size: 20px;
+}
+
+.fab{
+  width: 100px;
+  height: 100px;
+  color: #dcd6f7;
+  font-size: 40px;
+}
+
+.fab:hover{
+  color: #be7575;
+}

@@ -1,0 +1,21 @@
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-3">CATALOGO</h1>
+  </div>
+</div>
+
+
+<div class="card-columns">
+  <div class="card" *ngFor="let j of misjuegos, let i = index">
+    <img src={{j.img}} class="card-img-top" height="100%" width="100%">
+    <div class="card-body">
+      <h5 class="card-title">{{j.consola}}</h5>
+      <p class="card-text">{{j.nombre}}</p>
+      <p class="card-text"><small class="text-muted">{{j.precio}}</small></p>
+    </div>
+
+    <a [routerLink]="['/juego',i]" class="btn btn-outline-info btn-block">Ver más</a>
+  </div>
+</div>
+
+<app-footer></app-footer>
