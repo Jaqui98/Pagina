@@ -1,54 +1,72 @@
-<div class="container" fxLayout="row" fxLayout.xs="column" fxLayoutWrap fxLayoutGap = "0.5%" fxLayoutAlign="center">
-  <div fxFlex=100%>
-    <button mat-raised-button (click)="isLinear = !isLinear" id="toggle-linear">
-      {{!isLinear ? 'Enable linear mode' : 'Disable linear mode'}}
-    </button>
-    <mat-vertical-stepper [linear]="isLinear" #stepper>
-      <mat-step [stepControl]="firstFormGroup">
-        <form [formGroup]="firstFormGroup">
-          <ng-template matStepLabel>Ingresa tu Nombre</ng-template>
-          <mat-form-field>
-            <mat-label>Nombre</mat-label>
-            <input matInput placeholder="Nombre, Apellido" formControlName="firstCtrl" required>
-          </mat-form-field>
-          <div>
-          <mat-form-field appearance="fill">
-            <mat-label>Ingresa tu Password</mat-label>
-            <input matInput [type]="hide ? 'password' : 'text'">
-            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
-            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
-            </button>
-          </mat-form-field>
+<div class="fondo">
+
+
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">LOGIN</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
-          <div>
-            <button mat-button matStepperNext>Siguiente</button>
-          </div>
-        </form>
-      </mat-step>
-      <mat-step [stepControl]="secondFormGroup">
-        <form [formGroup]="secondFormGroup">
-          <ng-template matStepLabel>Llene su dirección</ng-template>
-          <mat-form-field>
-            <mat-label>Dirección</mat-label>
-            <input matInput formControlName="secondCtrl" placeholder="Ex. 1 Main St, New York, NY"
-                  required>
-          </mat-form-field>
-          <div>
-            <button mat-button matStepperPrevious>Atras</button>
-            <button mat-button matStepperNext>Siguiente</button>
-          </div>
-        </form>
-      </mat-step>
-      <mat-step>
-        <ng-template matStepLabel>Salir</ng-template>
-        <p>Ya has terminado.</p>
-        <div>
-          <button mat-button matStepperPrevious>Atras</button>
-          <button mat-button (click)="stepper.reset()">Reset</button>
+
+        <div class="modal-body">
+
+          <body>
+
+            <div id="clouds">
+              <div class="cloud x1"></div>
+              <!-- Time for multiple clouds to dance around -->
+              <div class="cloud x2"></div>
+              <div class="cloud x3"></div>
+              <div class="cloud x4"></div>
+              <div class="cloud x5"></div>
+            </div>
+
+            <div class="container">
+
+              <div id="login">
+
+                <form method="post">
+
+                  <fieldset class="clearfix">
+
+                    <p><span class="fontawesome-user"></span><input type="text" value="Username"
+                        onBlur="if(this.value == '') this.value = 'Username'"
+                        onFocus="if(this.value == 'Username') this.value = ''" required></p>
+                    <!-- JS because of IE support; better: placeholder="Username" -->
+                    <p><span class="fontawesome-lock"></span><input type="password" value="Password"
+                        onBlur="if(this.value == '') this.value = 'Password'"
+                        onFocus="if(this.value == 'Password') this.value = ''" required></p>
+                    <!-- JS because of IE support; better: placeholder="Password" -->
+                    <p><input type="submit" value="Sign In"></p>
+
+                  </fieldset>
+
+                </form>
+
+                <p>Not a member? <a href="#" class="blue">Sign up now</a><span class="fontawesome-arrow-right"></span>
+                </p>
+
+              </div> <!-- end login -->
+
+            </div>
+
+          </body>
+
+
+
+
         </div>
-      </mat-step>
-    </mat-vertical-stepper>
+
+
+      </div>
+    </div>
   </div>
 </div>
-
 <app-footer></app-footer>
