@@ -9,6 +9,7 @@ import { QuestionComponent } from './question/question.component';
 import { LoginComponent } from './login/login.component';
 import { JuegoComponent } from './juego/juego.component';
 import { BuscadorComponent } from './buscador/buscador.component';
+import { RegistroComponent } from './registro/registro.component';
 
 
 
@@ -20,6 +21,7 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent },
   { path: 'question', component: QuestionComponent },
   { path: 'login', component: LoginComponent },
+  { path: 'registro', component: RegistroComponent },
   { path: 'buscador/:nombrej', component: BuscadorComponent },
   { path: '**', pathMatch: 'full', redirectTo: 'home' }
 ];

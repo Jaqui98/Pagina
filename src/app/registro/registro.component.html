@@ -1,21 +1,4 @@
-<div class="fondo">
 
-
-
-
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">LOGIN</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-
-        <div class="modal-body">
 
           <body>
 
@@ -40,15 +23,31 @@
                         onBlur="if(this.value == '') this.value = 'Usuario'"
                         onFocus="if(this.value == 'Usuario') this.value = ''" required></p>
                     <!-- JS because of IE support; better: placeholder="Username" -->
+                    <p><span class="fontawesome-envelope"></span><input type="email" value="Email"
+                      onBlur="if(this.value == '') this.value = 'Email'"
+                      onFocus="if(this.value == 'Email') this.value = ''" required></p>
+                  <!-- JS because of IE support; better: placeholder="Email" -->
                     <p><span class="fontawesome-lock"></span><input type="password" value="Password"
                         onBlur="if(this.value == '') this.value = 'Password'"
                         onFocus="if(this.value == 'Password') this.value = ''" required></p>
                     <!-- JS because of IE support; better: placeholder="Password" -->
+                  <p><span class="fontawesome-lock"></span><input type="password" value="Password"
+                      onBlur="if(this.value == '') this.value = 'Password'"
+                      onFocus="if(this.value == 'Password') this.value = ''" required></p>
+                  <!-- JS because of IE support; better: placeholder="Password" -->
                     <p><input type="submit" value="Sign In"></p>
 
                   </fieldset>
 
                 </form>
+
+                <p>
+                  ¿Ya tienes una cuenta? <br> Inicia sesión.
+                  <a [routerLink]="['/login']" class="blue" type="button" data-toggle="modal" data-target="#exampleModal">Login</a>
+                  <span class="fontawesome-arrow-right"></span>
+                </p>
+
+
               </div> <!-- end login -->
 
             </div>
@@ -56,13 +55,4 @@
           </body>
 
 
-
-
-        </div>
-
-
-      </div>
-    </div>
-  </div>
-</div>
 <app-footer></app-footer>

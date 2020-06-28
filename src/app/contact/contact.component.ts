@@ -17,6 +17,11 @@ export class ContactComponent implements OnInit {
   secondFormGroup: FormGroup;
   isOptional = false;
 
+  map = {
+    lat: 51.678418,
+    lng: 7.809007,
+  };
+
   constructor(private _formBuilder: FormBuilder) {}
 
   ngOnInit() {
