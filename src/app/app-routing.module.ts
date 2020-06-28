@@ -7,6 +7,7 @@ import { AboutComponent } from './usuarios/about/about.component';
 import { ContactComponent } from './usuarios/contact/contact.component';
 import { QuestionComponent } from './usuarios/question/question.component';
 import { LoginComponent } from './usuarios/login/login.component';
+import { RegistroComponent } from './usuarios/registro/registro.component';
 import { JuegoComponent } from './usuarios/juego/juego.component';
 import { BuscadorComponent } from './usuarios/buscador/buscador.component';
 
@@ -20,6 +21,7 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent },
   { path: 'question', component: QuestionComponent },
   { path: 'login', component: LoginComponent },
+   { path: 'registro', component: RegistroComponent },
   { path: 'buscador/:nombrej', component: BuscadorComponent },
   { path: '**', pathMatch: 'full', redirectTo: 'home' }
 ];

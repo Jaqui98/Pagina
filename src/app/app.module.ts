@@ -18,6 +18,7 @@ import { JuegoComponent } from './usuarios/juego/juego.component';
 import { BuscadorComponent } from './usuarios/buscador/buscador.component';
 import { FooterComponent } from './usuarios/footer/footer.component';
 import { ContactComponent } from './usuarios/contact/contact.component';
+import { RegistroComponent } from './usuarios/registro/registro.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { ContactComponent } from './usuarios/contact/contact.component';
     JuegoComponent,
     BuscadorComponent,
     FooterComponent,
-    ContactComponent
+    ContactComponent,
+    RegistroComponent
   ],
   imports: [
     BrowserModule,
