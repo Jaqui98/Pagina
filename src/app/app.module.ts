@@ -31,7 +31,6 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
 //Comando VOZ
-import { SpeechSynthesisModule } from '@kamiazya/ngx-speech-synthesis';
 
 @NgModule({
   declarations: [
@@ -63,13 +62,7 @@ import { SpeechSynthesisModule } from '@kamiazya/ngx-speech-synthesis';
     MatListModule,
     MatGridListModule,
     MatCardModule,
-    MatMenuModule,
-    SpeechSynthesisModule.forRoot({
-      lang: 'es-MX',
-      volume: 1.0,
-      pitch: 1.0,
-      rate: 1.0,
-    })
+    MatMenuModule
   ],
   providers: [JuegoService],
   bootstrap: [AppComponent]
