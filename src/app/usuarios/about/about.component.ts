@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import {
+/*import {
   SpeechSynthesisUtteranceFactoryService,
   SpeechSynthesisService,
-} from '@kamiazya/ngx-speech-synthesis';
+} from '@kamiazya/ngx-speech-synthesis';*/
 
 @Component({
   selector: 'app-about',
@@ -11,7 +11,7 @@ import {
 })
 export class AboutComponent implements OnInit {
 
-  contents = [
+  /*contents = [
     'GAMES KAMEL',
     'Acerca de Nosotros',
     'Fundada en 1998',
@@ -25,14 +25,14 @@ export class AboutComponent implements OnInit {
     'El propósito de nuestra página web es brindar un servicio de compra de videojuegos para un público en general.  Contaremos con un amplio catalogo de videojuegos para cualquier edad y se mantendrá actualizado el contenido.',
     'Se tendrá una interfaz amigable. La comunicación con el usuario será eficiente y rápida.',
     'Lo que pretendemos transmitir es una opción de adquirir un videojuego de forma sencilla, cómoda y agradable. Nuestro catalogo tendrá un precio especial a comparación de otras p+aginas de ventas de videojuegos.',
-  ];
+  ];*/
 
   constructor(
-    public f: SpeechSynthesisUtteranceFactoryService,
-    public svc: SpeechSynthesisService,
+    /*public f: SpeechSynthesisUtteranceFactoryService,
+    public svc: SpeechSynthesisService,*/
   ) { }
 
-  speech() {
+  /*speech() {
     for (const text of this.contents) {
       this.svc.speak(this.f.text(text));
     }
@@ -40,7 +40,7 @@ export class AboutComponent implements OnInit {
 
   detener(){
     this.svc.pause();
-  }
+  }*/
 
   ngOnInit(): void {
   }
