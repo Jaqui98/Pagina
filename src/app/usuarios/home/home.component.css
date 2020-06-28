@@ -4,7 +4,7 @@
 
 .titulo{
     text-align: center;
-    background-image: url(../../assets/img/02.jpeg);
+    background-image: url(../../../assets/img/02.jpeg);
     color: whitesmoke;
     opacity: 30%;
 }
@@ -18,7 +18,7 @@
     }
 
 .catalogo{
-  background-image: url(../../assets/img/difuminado1.jpg);
+  background-image: url(../../../assets/img/difuminado1.jpg);
   margin: 20px;
   padding: 50px;
   border-radius: 25px;

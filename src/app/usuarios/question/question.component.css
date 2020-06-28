@@ -1,5 +1,5 @@
 .jumbotron{
-  background-image: url(../../assets/img/universo3.webp);
+  background-image: url(../../../assets/img/universo3.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -14,5 +14,5 @@
 }
 
 .fondo{
-  background-image: url(../../assets/img/18.jpg);
+  background-image: url(../../../assets/img/18.jpg);
 }

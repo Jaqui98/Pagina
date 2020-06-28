@@ -3,21 +3,21 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { HomeComponent } from './home/home.component';
-import { JuegosComponent } from './juegos/juegos.component';
-import { AboutComponent } from './about/about.component';
-import { QuestionComponent } from './question/question.component';
-import { LoginComponent } from './login/login.component';
+import { NavbarComponent } from './usuarios/navbar/navbar.component';
+import { HomeComponent } from './usuarios/home/home.component';
+import { JuegosComponent } from './usuarios/juegos/juegos.component';
+import { AboutComponent } from './usuarios/about/about.component';
+import { QuestionComponent } from './usuarios/question/question.component';
+import { LoginComponent } from './usuarios/login/login.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MaterialModule } from './material/material.module';
+import { MaterialModule } from './usuarios/material/material.module';
 // --------------------------------- SERVICIOS ---------------------------------
-import { JuegoService } from './shared/juego.service';
-import { JuegoComponent } from './juego/juego.component';
-import { BuscadorComponent } from './buscador/buscador.component';
-import { FooterComponent } from './footer/footer.component';
-import { ContactComponent } from './contact/contact.component';
+import { JuegoService } from './usuarios/shared/juego.service';
+import { JuegoComponent } from './usuarios/juego/juego.component';
+import { BuscadorComponent } from './usuarios/buscador/buscador.component';
+import { FooterComponent } from './usuarios/footer/footer.component';
+import { ContactComponent } from './usuarios/contact/contact.component';
 
 @NgModule({
   declarations: [

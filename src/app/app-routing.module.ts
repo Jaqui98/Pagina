@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { HomeComponent } from './home/home.component';
-import { JuegosComponent } from './juegos/juegos.component';
-import { AboutComponent } from './about/about.component';
-import { ContactComponent } from './contact/contact.component';
-import { QuestionComponent } from './question/question.component';
-import { LoginComponent } from './login/login.component';
-import { JuegoComponent } from './juego/juego.component';
-import { BuscadorComponent } from './buscador/buscador.component';
+import { HomeComponent } from './usuarios/home/home.component';
+import { JuegosComponent } from './usuarios/juegos/juegos.component';
+import { AboutComponent } from './usuarios/about/about.component';
+import { ContactComponent } from './usuarios/contact/contact.component';
+import { QuestionComponent } from './usuarios/question/question.component';
+import { LoginComponent } from './usuarios/login/login.component';
+import { JuegoComponent } from './usuarios/juego/juego.component';
+import { BuscadorComponent } from './usuarios/buscador/buscador.component';
 
 
 
