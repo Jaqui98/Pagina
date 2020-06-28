@@ -31,28 +31,28 @@ export class JuegoService {
       descrip: "El popular juego tipo battle royal.",
       img: "assets/img/juegos/02.jpg",
       precio: "FREE",
-      consola:"PlayStation 4, Xbox One, Nintendo Switch"
+      consola:"Xbox 360"
     },
     {
       nombre: "GTA V",
       descrip: "El juego se desarrolla nueve años después de un atraco frustrado en Ludendorff. Michael Townley, fue dado por muerto en Nort Yankton y ha sido puesto bajo protección de los testigos por el agente corrupto del FIB. Michael deberá realizar una serie de operaciones con el objetivo de socavar a una agencia rival. Disfruta cumpliendo cada misión que se te presenta con gráficos más elaborados y detallados.",
       img: "assets/img/juegos/04.jpg",
       precio: "$ 599",
-      consola: "PlayStation 4, Xbox One"
+      consola: "Xbox 360"
     },
     {
       nombre: "Animal Crossing",
       descrip: "La creatividad y el encanto pacíficos te esperan mientras te arremangas y haces de tu nueva vida lo que quieras que sea. Recolecta recursos y crea todo, desde comodidades hasta herramientas útiles. Abraza tu pulgar verde mientras interactúas con flores y árboles de nuevas maneras. Configure una granja donde las reglas de lo que ocurre dentro y fuera de la casa ya no se apliquen. Haga amigos con los recién llegados, disfrute de las estaciones, salte con una pértiga a través de los ríos mientras explora, ¡y más! esta nueva adición a la serie Animal Crossing se lanza el 20 de marzo de 2020, exclusivamente para el sistema Nintendo Switch.",
       img: "assets/img/juegos/06.jpg",
       precio: "$ 1340.00",
-      consola: "Nintendo"
+      consola: "Nintendo Switch"
     },
     {
       nombre: "Resident Evil 7 Biohazard",
       descrip: "Disfruta de uno de los juegos más terroríficos y más aclamados de 2017 con Resident Evil 7 Gold Edition, que incluye todo el contenido del Season Pass. En la piel de Ethan Winters, explora la mansión Baker, aparentemente abandonada, y descubre la verdad que se esconde detrás de la desaparición de tu esposa. La Gold Edition contiene el juego completo, el DLC Grabaciones inéditas vol. 1 y 2, y el episodio de epílogo Final de Zoe. También incluye el DLC gratuito «No soy un héroe».",
       img: "assets/img/juegos/07.jpg",
       precio: "$ 571.00",
-      consola: "Xbox 360, PlayStation 4"
+      consola: "Xbox 360"
     },
     {
       nombre: "The Legend of Zelda Breath of the Wild",

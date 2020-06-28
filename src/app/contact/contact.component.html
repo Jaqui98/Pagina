@@ -1,48 +1,60 @@
-<div class="container" fxLayout="row" fxLayout.xs="column" fxLayoutWrap fxLayoutGap = "0.5%" fxLayoutAlign="center">
-  <div fxFlex=100%>
-    <button mat-raised-button (click)="isOptional = !isOptional">
-      {{!isOptional ? 'Enable optional steps' : 'Disable optional steps'}}
-    </button>
+<script>
+  $('#login-button').click(function(){
+  $('#login-button').fadeOut("slow",function(){
+    $("#container").fadeIn();
+    TweenMax.from("#container", .4, { scale: 0, ease:Sine.easeInOut});
+    TweenMax.to("#container", .4, { scale: 1, ease:Sine.easeInOut});
+  });
+});
 
-    <mat-horizontal-stepper linear #stepper>
-      <mat-step [stepControl]="firstFormGroup">
-        <form [formGroup]="firstFormGroup">
-          <ng-template matStepLabel>Ingresa tu nombre</ng-template>
-          <mat-form-field>
-            <mat-label>Nombre</mat-label>
-            <input matInput placeholder="Last name, First name" formControlName="firstCtrl" required>
-          </mat-form-field>
-          <div>
-            <button mat-button matStepperNext>Siguiente</button>
-          </div>
-        </form>
-      </mat-step>
-      <mat-step [stepControl]="secondFormGroup" [optional]="isOptional">
-        <form [formGroup]="secondFormGroup">
-          <ng-template matStepLabel>Ingresa tu dirección</ng-template>
-          <mat-form-field>
-            <mat-label>Dirección</mat-label>
-            <input matInput formControlName="secondCtrl" placeholder="Ex. 1 Main St, New York, NY"
-                  required>
-          </mat-form-field>
-          <div>
-            <button mat-button matStepperPrevious>Atras</button>
-            <button mat-button matStepperNext>Siguiente</button>
-          </div>
-        </form>
-      </mat-step>
-      <mat-step>
-        <ng-template matStepLabel>Salir</ng-template>
-        <p>Ya has terminado.</p>
-        <div>
-          <button mat-button matStepperPrevious>Atras</button>
-          <button mat-button (click)="stepper.reset()">Reset</button>
-        </div>
-      </mat-step>
-    </mat-horizontal-stepper>
-  </div>
+$(".close-btn").click(function(){
+  TweenMax.from("#container", .4, { scale: 1, ease:Sine.easeInOut});
+  TweenMax.to("#container", .4, { left:"0px", scale: 0, ease:Sine.easeInOut});
+  $("#container, #forgotten-container").fadeOut(800, function(){
+    $("#login-button").fadeIn(800);
+  });
+});
+
+/* Forgotten Password */
+$('#forgotten').click(function(){
+  $("#container").fadeOut(function(){
+    $("#forgotten-container").fadeIn();
+  });
+});
+</script>
+
+<div id="login-button">
+  <img src="https://dqcgrsy5v35b9.cloudfront.net/cruiseplanner/assets/img/icons/login-w-icon.png">
+</div>
+<div id="container">
+  <h1>Log In</h1>
+  <span class="close-btn">
+    <img src="https://cdn4.iconfinder.com/data/icons/miu/22/circle_close_delete_-128.png">
+  </span>
+
+  <form>
+    <input type="email" name="email" placeholder="E-mail">
+    <input type="password" name="pass" placeholder="Password">
+    <a href="#">Log in</a>
+    <div id="remember-container">
+      <input type="checkbox" id="checkbox-2-1" class="checkbox" checked="checked"/>
+      <span id="remember">Remember me</span>
+      <span id="forgotten">Forgotten password</span>
+    </div>
+</form>
 </div>
 
+<!-- Forgotten Password Container -->
+<div id="forgotten-container">
+   <h1>Forgotten</h1>
+  <span class="close-btn">
+    <img src="https://cdn4.iconfinder.com/data/icons/miu/22/circle_close_delete_-128.png">
+  </span>
+
+  <form>
+    <input type="email" name="email" placeholder="E-mail">
+    <a href="#" class="orange-btn">Get new password</a>
+</form>
+</div>
 <app-footer></app-footer>
 
-<app-footer></app-footer>

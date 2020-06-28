@@ -1,0 +1,18 @@
+.jumbotron{
+  background-image: url(../../assets/img/universo3.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  color: white;
+}
+
+.preguntas{
+  margin: 50px;
+  opacity: 70%;
+  height: 70%;
+}
+
+.fondo{
+  background-image: url(../../assets/img/18.jpg);
+}

@@ -1,0 +1,20 @@
+.consola{
+  font-size: 200px;
+}
+
+.btn{
+  margin-left: 50%;
+}
+
+.fadeIn{
+  text-align: center;
+  margin-top: 15px;
+}
+
+img{
+  margin-bottom: 20px;
+}
+img:hover{
+  transform: scale(1.2);
+}
+
