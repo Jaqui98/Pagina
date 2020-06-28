@@ -1,0 +1,159 @@
+<div class="grid-container">
+
+  <mat-sidenav-container class="example-container">
+    <mat-sidenav #sidenav [mode]="mode.value">
+      <p><button mat-button (click)="sidenav.toggle()">Menu</button></p>
+      <p>
+        <mat-radio-group class="example-radio-group" [formControl]="mode">
+          <mat-radio-button style="display: none;" value="push">Push</mat-radio-button>
+        </mat-radio-group>
+      </p>
+
+      <app-panel></app-panel>
+
+    </mat-sidenav>
+
+    <p><button mat-button (click)="sidenav.toggle()">Desplegar menu</button></p>
+    <h1 class="mat-h1">Dashboard</h1>
+    <mat-grid-list cols="2" rowHeight="350px">
+      <mat-grid-tile *ngFor="let card of cards | async" [colspan]="card.cols" [rowspan]="card.rows">
+        <mat-card class="dashboard-card">
+          <mat-card-header>
+            <mat-card-title>
+              {{card.title}}
+              <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
+                <mat-icon>more_vert</mat-icon>
+              </button>
+              <mat-menu #menu="matMenu" xPosition="before">
+                <button mat-menu-item>Expand</button>
+                <button mat-menu-item>Remove</button>
+              </mat-menu>
+            </mat-card-title>
+          </mat-card-header>
+          <mat-card-content class="dashboard-card-content">
+            <div>
+
+              <form [formGroup]="forma" (ngSubmit)="guardarCambios()">
+
+                <div class="container">
+                  <div class="row mt-5">
+                    <div class="col-6">
+                      <h4>Formularios <small>data</small></h4>
+                      <hr>
+                      <div class="form-group row">
+                        <label class="col-2 col-form-label">Nombre</label>
+                        <div class="col-8">
+
+                          <input class="form-control" type="text" placeholder="Nombre" formControlName="nombre">
+
+
+                        </div>
+                      </div>
+
+                      <div class="form-group row">
+                        <label class="col-2 col-form-label">Apellido</label>
+                        <div class="col-8">
+
+                          <input class="form-control" type="text" placeholder="Apellido" formControlName="apellido">
+                        </div>
+                      </div>
+
+                      <div class="form-group row">
+                        <label class="col-2 col-form-label">Correo</label>
+                        <div class="col-8">
+
+                          <input class="form-control" type="text" placeholder="Correo electronico"
+                            formControlName="correo">
+
+
+                        </div>
+                      </div>
+
+                      <div class="form-group row">
+                        <label class="col-2 col-form-label">&nbsp;</label>
+                        <div class="input-group col-md-8">
+                          <button type="submit" class="btn btn-outline-primary">
+                            Guardar
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  {{forma.valid}}
+                </div>
+              </form>
+
+
+            </div>
+          </mat-card-content>
+        </mat-card>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </mat-sidenav-container>
+
+
+
+</div>
+
+<!--
+<form  [formGroup]="forma" (ngSubmit)="guardarCambios()"  >
+
+  <div class="container">
+   <div class="row mt-5">
+     <div class="col-6">
+      <h4>Formularios <small>data</small></h4>
+      <hr>
+    <div class="form-group row">
+      <label class="col-2 col-form-label">Nombre</label>
+      <div class="col-8">
+
+        <input class="form-control"
+
+        type="text"
+        placeholder="Nombre"
+        formControlName="nombre">
+
+
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <label class="col-2 col-form-label">Apellido</label>
+      <div class="col-8">
+
+        <input class="form-control"
+               type="text"
+               placeholder="Apellido"
+               formControlName="apellido">
+      </div>
+    </div>
+
+     <div class="form-group row">
+      <label class="col-2 col-form-label">Correo</label>
+      <div class="col-8">
+
+        <input class="form-control"
+
+        type="text"
+        placeholder="Correo electronico"
+        formControlName="correo">
+
+
+      </div>
+    </div>
+
+   <div class="form-group row">
+    <label class="col-2 col-form-label">&nbsp;</label>
+    <div class="input-group col-md-8">
+      <button type="submit" class="btn btn-outline-primary"  >
+        Guardar
+      </button>
+    </div>
+  </div>
+  </div>
+</div>
+ {{forma.valid}}
+</div>
+</form>
+
+-->

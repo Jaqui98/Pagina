@@ -9,10 +9,16 @@ import { QuestionComponent } from './usuarios/question/question.component';
 import { LoginComponent } from './usuarios/login/login.component';
 import { JuegoComponent } from './usuarios/juego/juego.component';
 import { BuscadorComponent } from './usuarios/buscador/buscador.component';
+import { PanelComponent } from './admin/panel/panel.component';
+import { DashboardComponent } from './admin/dashboard/dashboard.component';
 
 
 
 const routes: Routes = [
+  //Administrador
+  { path: 'admin',component:PanelComponent},
+  { path: 'dash',component:DashboardComponent},
+  //Usuario
   { path: 'home', component: HomeComponent },
   { path: 'juegos', component: JuegosComponent },
   { path: 'juego/:id', component: JuegoComponent },
