@@ -26,7 +26,6 @@
     "@angular/platform-browser": "~9.1.11",
     "@angular/platform-browser-dynamic": "~9.1.11",
     "@angular/router": "~9.1.11",
-    "@kamiazya/ngx-speech-synthesis": "0.0.4",
     "@types/jasmine": "^3.5.11",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "^12.11.1",
