@@ -18,6 +18,7 @@ import { JuegoComponent } from './usuarios/juego/juego.component';
 import { BuscadorComponent } from './usuarios/buscador/buscador.component';
 import { FooterComponent } from './usuarios/footer/footer.component';
 import { ContactComponent } from './usuarios/contact/contact.component';
+<<<<<<< HEAD
 import { PanelComponent } from './admin/panel/panel.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -29,6 +30,9 @@ import { DashboardComponent } from './admin/dashboard/dashboard.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
+=======
+import { RegistroComponent } from './usuarios/registro/registro.component';
+>>>>>>> 5ccd3e4725fcb30aabdb696914af8d5f4c375950
 
 @NgModule({
   declarations: [
@@ -43,8 +47,12 @@ import { MatMenuModule } from '@angular/material/menu';
     BuscadorComponent,
     FooterComponent,
     ContactComponent,
+<<<<<<< HEAD
     PanelComponent,
     DashboardComponent
+=======
+    RegistroComponent
+>>>>>>> 5ccd3e4725fcb30aabdb696914af8d5f4c375950
   ],
   imports: [
     BrowserModule,

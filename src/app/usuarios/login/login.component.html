@@ -1,14 +1,12 @@
 <app-navbar></app-navbar>
 <div class="fondo">
 
-
-
-
   <!-- Modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
     aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
+
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLabel">LOGIN</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -30,16 +28,13 @@
             </div>
 
             <div class="container">
-
               <div id="login">
-
                 <form method="post">
-
                   <fieldset class="clearfix">
 
-                    <p><span class="fontawesome-user"></span><input type="text" value="Username"
-                        onBlur="if(this.value == '') this.value = 'Username'"
-                        onFocus="if(this.value == 'Username') this.value = ''" required></p>
+                    <p><span class="fontawesome-user"></span><input type="text" value="Usuario"
+                        onBlur="if(this.value == '') this.value = 'Usuario'"
+                        onFocus="if(this.value == 'Usuario') this.value = ''" required></p>
                     <!-- JS because of IE support; better: placeholder="Username" -->
                     <p><span class="fontawesome-lock"></span><input type="password" value="Password"
                         onBlur="if(this.value == '') this.value = 'Password'"
@@ -48,26 +43,16 @@
                     <p><input type="submit" value="Sign In"></p>
 
                   </fieldset>
-
                 </form>
-
-                <p>Not a member? <a href="#" class="blue">Sign up now</a><span class="fontawesome-arrow-right"></span>
-                </p>
-
               </div> <!-- end login -->
-
             </div>
 
           </body>
 
-
-
-
         </div>
-
-
       </div>
     </div>
   </div>
 </div>
+
 <app-footer></app-footer>

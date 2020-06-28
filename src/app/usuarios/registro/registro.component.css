@@ -7,14 +7,6 @@
   font-family: "FontAwesome", sans-serif;
 }
 
-.fondo {
-  background-image: url(../../../assets/img/03.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-}
-
 /* ---------- GENERAL ---------- */
 * {
   -moz-box-sizing: border-box;
@@ -27,10 +19,10 @@
 }
 
 body {
-
+  height: 80%;
   color: #606468;
   font: 87.5%/1.5em "Open Sans", sans-serif;
-  margin: 0;
+
   overflow-y: auto !important;
 }
 a {
@@ -69,7 +61,7 @@ p {
 .container {
   left: 70%;
   position: absolute;
-  top: 50%;
+  top: 55%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -96,9 +88,8 @@ p {
 #login form input {
   height: 50px;
 }
-
 #login form input[type="text"],
-input[type="password"] {
+input[type="password"], input[type="email"] {
   background-color: #3b4148;
   border-radius: 0px 3px 3px 0px;
   color: #606468;
@@ -131,7 +122,15 @@ input[type="password"] {
   padding-left: 5px;
 }
 
+/*Lets start with the cloud formation rather*/
 
+/*The container will also serve as the SKY*/
+
+/*Falta el *{
+margin:0
+paddiong:0
+}
+*/
 
 #clouds {
   padding: 50px 0;
@@ -287,14 +286,4 @@ input[type="password"] {
 }
 .blue {
   color: #09c;
-}
-
-.modal-backdrop fade show {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1040;
-  width: 100vw;
-  height: 100vh;
-  background-color: transparent;
 }
